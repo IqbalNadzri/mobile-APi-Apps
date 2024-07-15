@@ -70,7 +70,7 @@ class _StackerPageState extends State<StackerPage> {
 
     for (int i = 0; i < _imageFileList.length; i++) {
       if (_imageFileList[i] != null) {
-        var uri = Uri.parse('http://192.168.10.6:83/api/driver/uploadchecklistimage');
+        var uri = Uri.parse('');
         var request = http.MultipartRequest('POST', uri);
         request.headers.addAll(headers);
         request.fields['checklist_id'] = widget.checklist_serial ?? '';
@@ -113,7 +113,7 @@ class _StackerPageState extends State<StackerPage> {
 
   Future<void> getChecklistImage(String fieldName, int index) async {
     final uri = Uri.http(
-        '192.168.10.6:83', 'api/driver/getchecklistfieldimage', {
+        '', {
       'equipment': widget.equipment_name,
       'equipment_category': widget.equipment_category,
       'image_name': '$fieldName.jpg',
@@ -140,7 +140,7 @@ class _StackerPageState extends State<StackerPage> {
   }
 
   Future<void> fetchData() async {
-    final uri = Uri.http('192.168.10.6:83', 'api/driver/getchecklistfieldmobile', {
+    final uri = Uri.http('', {
       'equipment_name': widget.equipment_name,
       'equipment_category': widget.equipment_category,
       'division': widget.division,
@@ -214,7 +214,7 @@ class _StackerPageState extends State<StackerPage> {
 
   Future<void> addChecklistData(String? equipment_no, String? checklist_serial, String status, String? date, List field_names, List remarkList, String? odometer) async {
     try {
-      String url = 'http://192.168.10.6:83/api/driver/addchecklistdata';
+      String url = '';
 
       for (int i = 0; i < field_names.length; i++) {
         var data = {
