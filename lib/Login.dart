@@ -70,7 +70,7 @@ class _LoginState extends State<Login> {
 
         print('2');
         var accesstoken = token['access_token'];
-        final uri = Uri.https('192.168.10.5:8243','test/driver/1.0.0/login',queryParameters);
+        final uri = Uri.https();
 
         print('3');
         Response response = await get (
@@ -145,14 +145,14 @@ class _LoginState extends State<Login> {
 
   void _getToken(String email, String password){
     http.post(
-      Uri.parse('https://192.168.10.5:9443/oauth2/token'),
+      Uri.parse('https'),
       headers: {
-        'Authorization': 'Basic Q0JQcWNWaW1SRXBqdk9aRjd5dFFhcWdzUzZZYTpQelBLbklhTk16X3lsOVNmc21mRDJKMWlhX3Nh'
+        'Authorization': 'Basic iyiyyiigihgbubkh'
       },
       body : {
-        "grant_type": "password",
-        "username": "testhaulagemobile",
-        "password": "mobilehaulage1442"
+        "grant_type": "",
+        "username": "",
+        "password": ""
       },
     ).then((response){
       setState(() {
@@ -165,7 +165,7 @@ class _LoginState extends State<Login> {
 
  Future<String?> authenticate(String email,String password) async {
     final response = await http.post(
-      Uri.parse('http://192.168.10.6:83/api/driver/login'),
+      Uri.parse('http'),
       body: {
         'email':email,
         'password': password,
