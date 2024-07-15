@@ -93,7 +93,7 @@ class _FirstStackerState extends State<FirstStacker> {
   }
 
   Future<String?> postData(int? user_id, String? inputField, String? date, String? latlong) async {
-    String url = 'http://192.168.10.6:83/api/driver/generateserialid';
+    String url = '';
     bool isPlateNo = _isPlateNo(inputField);
 
     Map<String, dynamic> data = {
