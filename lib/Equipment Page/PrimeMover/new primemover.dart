@@ -75,7 +75,7 @@ class _EquipmentPage1State extends State<EquipmentPage1> {
 
     for (int i = 0; i < _imageFileList.length; i++) {
       if (_imageFileList[i] != null) {
-        var uri = Uri.parse('http://192.168.10.6:83/api/driver/uploadchecklistimage');
+        var uri = Uri.parse('http:');
         var request = http.MultipartRequest('POST', uri);
         request.headers.addAll(headers);
         request.fields['checklist_id'] = widget.checklist_serial ?? '';
@@ -104,8 +104,7 @@ class _EquipmentPage1State extends State<EquipmentPage1> {
 
   Future<void> getChecklistImage(String fieldName, int index) async {
     final uri = Uri.http(
-        '192.168.10.6:83',
-        'api/driver/getchecklistfieldimage',
+        '',
         {
           'equipment': widget.equipment_name,
           'equipment_category': widget.equipment_category,
@@ -134,8 +133,7 @@ class _EquipmentPage1State extends State<EquipmentPage1> {
 
   Future<void> fetchData() async {
     final uri = Uri.http(
-        '192.168.10.6:83',
-        'api/driver/getchecklistfieldmobile',
+        '',
         {
           'equipment_name': widget.equipment_name,
           'equipment_category': widget.equipment_category,
