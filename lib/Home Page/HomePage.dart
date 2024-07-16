@@ -261,7 +261,7 @@ class _HomePageState extends State<HomePage> {
                   width: MediaQuery.of(context).size.width -50,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('images/primemover.png'),
+                      image: AssetImage('images/'),
                       fit: BoxFit.cover,
                       opacity: 100,
                     ),
@@ -272,7 +272,7 @@ class _HomePageState extends State<HomePage> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
                       ),
-                      child: const Text('\n      PRIMEMOVER     \n',
+                      child: const Text('\n          \n',
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
@@ -292,7 +292,7 @@ class _HomePageState extends State<HomePage> {
                   width: MediaQuery.of(context).size.width -50,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('images/forkliftdiesel.png'),
+                      image: AssetImage('images/'),
                       fit: BoxFit.cover,
                       opacity: 100,
                     ),
@@ -303,7 +303,7 @@ class _HomePageState extends State<HomePage> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
                       ),
-                      child: const Text('\n            FORKLIFT              \n',
+                      child: const Text('\n                        \n',
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
@@ -324,7 +324,7 @@ class _HomePageState extends State<HomePage> {
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage(
-                        'images/trailer.png',
+                        'images/',
                       ),
                       fit: BoxFit.cover,
                       opacity: 100,
@@ -336,7 +336,7 @@ class _HomePageState extends State<HomePage> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
                       ),
-                      child: const Text('\n              Trailer             \n',
+                      child: const Text('\n                         \n',
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
@@ -356,7 +356,7 @@ class _HomePageState extends State<HomePage> {
                   width: MediaQuery.of(context).size.width -50,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('images/stacker.png'),
+                      image: AssetImage('images/'),
                       fit: BoxFit.cover,
                       opacity: 100,
                     ),
@@ -367,7 +367,7 @@ class _HomePageState extends State<HomePage> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
                       ),
-                      child: const Text('\n            Stacker               \n',
+                      child: const Text('\n                       \n',
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
